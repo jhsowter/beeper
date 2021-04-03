@@ -24,6 +24,9 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+  - sdl2
+  - vector
 
 executables:
   beeper-exe:
@@ -35,6 +38,8 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - beeper
+    - sdl2
+    - vector
 
 tests:
   beeper-test:
